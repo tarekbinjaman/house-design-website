@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Custom breakpoint -->
+    <script>
+        tailwind.config = {
+            
+          theme: {
+            screens: {
+      'sm': '425px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="manrope">
+    <!-- Header section -->
+     
+    <header class="bg-slate-100">
+        <div class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar">
+                <div><i class="fa-solid fa-arrow-up rotate-45 mr-2 w-8 mt-1 rounded-full bg-yellow-300 text-center px-2 py-2"></i></div>
+                <div class="navbar-start">
+                  <h1 class="text-3xl font-extrabold">Rinterio</h1>
+                </div>
+                <div class="sm:hidden navbar-center lg:flex items-center justify-center">
+                  <ul class="menu menu-horizontal px-1 text-base font-medium">
+                    <li class="font-extrabold"><a>Home</a></li>
+                    <li><a>Services</a>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a>
+                </div>
+                <div class="navbar-end">
+                <!-- search icon -->                                    
+                 <div class="md:visible sm:invisible"><i class="fa-solid fa-magnifying-glass mr-5  w-8 mt-1 rounded-full bg-white text-center px-2 py-2"></i></div>               
+                <!-- Cart icon -->    
+                <div class="md:visible sm:invisible"><i class="fa-solid fa-cart-shopping mr-5  w-8 mt-1 rounded-full bg-white text-center px-2 py-2"></i></div>    
+                  <div class="md:visible sm:invisible"><a class="btn bg-yellow-300 rounded-3xl pb-1 justify-center items-center"><span class=" text-lg font-bold">Book Consult</span> <i class="fa-solid fa-arrow-up rotate-45 mr-2 w-8 mt-1 rounded-full bg-black text-center px-2 py-2 text-white"></i></a></div>
+                  <div class="lg:hidden"><i class=" fa-solid fa-bars text-1xl mr-4 px-4 py-4 bg-white rounded-full"></i></div>
+                </div>
+              </div> 
+        </nav>
+    </div>
+    </header>
+     <!-- Main section -->
+     <main></main>
+     <!-- Footer section -->
+      <footer></footer>
+</body>
+</html>
