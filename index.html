@@ -41,6 +41,9 @@
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    backgroundImage: {
+      bg_1:"url('assets/bg.jpg')"
+    },
             extend: {
               colors: {
                 clifford: '#da373d',
@@ -186,7 +189,7 @@
             </div>
          </section>
          <!-- Portfolio section -->
-          <section class="bg-white">
+          <section class="bg-white pb-[100px]">
             <!-- Button and text area -->
               <div class="md:container md:mx-auto">
              <div class="flex flex-col items-center justify-center space-y-5 mt-[80px] mb-8">
@@ -208,14 +211,14 @@
                   </div>
                 </div>
                 <!-- Only img -->
-                 <div class="lg:w-2/5 sm:w-[394px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
+                 <div class="lg:w-2/5 sm:w-[339px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
                   <img class="w-full" src="assets/img2.png" alt="">
                  </div>
                 </div>
               </div>
               <div class="flex sm:flex-col lg:flex-row lg:mt-8">
               <!-- 2nd row -->
-              <div class="lg:w-[300px] sm:w-[394px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
+              <div class="lg:w-[300px] sm:w-[339px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
                 <img class="w-full" src="assets/img3.png" alt="">
                </div>
                <!-- 2nd col -->
@@ -228,15 +231,73 @@
                 </div>
               </div>
               <!-- Third col -->
-              <div class="lg:w-[300px] sm:w-[394px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
+              <div class="lg:w-[300px] sm:w-[339px] sm:mt-5 lg:mt-0 sm:ml-12 border border-blue-300 p-5 rounded-xl">
                 <img class="w-full" src="assets/img5.png" alt="">
                </div>
               </div>
 
             </div>
           </section>
+          <!-- Input section -->
+           <section class="bg-bg_1 bg-no-repeat bg-cover pt-8 pb-8">
+            <div class="md:container md:mx-auto">
+              <!-- Text and button -->
+              <div class="flex flex-col items-center justify-center space-y-5 mt-[80px] mb-8">
+                <button class="bg-yellow-50 px-6 py-2 rounded-2xl"><i class="fa-solid fa-arrow-right mr-2"></i> Explore our Latest works</button>
+                <h2 class="lg:text-4xl sm:text-2xl font-bold">Let’s Discuss Next Project</h2>
+                <p class="lg:w-1/2 lg:px-0 sm:px-4 text-gray-600 font-semibold text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+               </div>
+               <!-- Input form -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 sm:px-6 lg:px-0">
+                  <div><input type="text" placeholder="First name" class="bg-white rounded-3xl w-full mt-4 p-4"></div>
+                  <div><input type="text" placeholder="First name" class="bg-white rounded-3xl w-full mt-4 p-4"></div>
+                  <div><input type="text" placeholder="First name" class="bg-white rounded-3xl w-full mt-4 p-4"></div>
+                  <div><input type="text" placeholder="First name" class="bg-white rounded-3xl w-full mt-4 p-4"></div>
+                  <div class="lg:col-span-2 mt-4"><textarea name="" placeholder="Write here" rows="9" id="" class="bg-white rounded-3xl w-full p-4"></textarea></div>
+                  <button class="btn btn-primary bg-green-400 border-none lg:col-span-2 mt-4"><span class="font-bold text-black text-[16px]">Send mail</span><i class="fa-solid fa-arrow-up rotate-45 mr-2 w-8 mt-1 rounded-full bg-black text-center px-2 py-2 text-white"></i> </button>
+                </div>
+            </div>
+           </section>
+           <!-- Blog section -->
+            <section class="bg-gray-600">
+              <div class="md:container md:mx-auto">
+              <h2 class="text-white font-bold text-4xl text-center py-10">Blog</h2>
+              <div class="lg:flex lg:flex-row sm:flex sm:flex-col sm:px-5 lg:px-0 lg:gap-5">
+                <div >
+                  <img class="w-full rounded-2xl" src="assets/b-1.jpg" alt="">
+                  <p class="text-white">Read our daily blog on building design </p>
+                  <button class="text-white px-3 py-2 bg-black border border-white mt-4 mb-4">Read more</button>
+                </div>
+                <div >
+                  <img class="w-full rounded-2xl" src="assets/b-2.jpg" alt="">
+                  <p class="text-white">Our latest building updated design </p>
+                  <button class="text-white px-3 py-2 bg-black border border-white mt-4 mb-4">Read more</button>
+                </div>
+              </div>
+            </div>
+            </section>
      </main>
      <!-- Footer section -->
-      <footer></footer>
+      <footer class="bg-black">
+        <div class="lg:flex lg:flex-col lg:items-center lg:justify-center sm:items-center sm:justify-center sm:flex sm:flex-col pt-8 gap-6 pb-8">
+           <div class="flex">
+                  <div ><i class="fa-solid fa-arrow-up rotate-45 mr-2 w-8 mt-1 rounded-full bg-yellow-300 text-center px-2 py-2"></i></div>
+                  <h1 class="text-3xl text-white font-extrabold">Rinterio</h1>
+                </div>
+                <div>
+                  <p class="text-gray-500 sm:px-5 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="lg:flex items-center justify-center">
+                  <ul class="menu menu-horizontal px-1 text-base text-white font-medium sm:flex lg:flex-row sm:flex-col sm:items-center">
+                    <li class="font-extrabold"><a>Home</a></li>
+                    <li><a>Services</a>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class=""><a class="btn bg-yellow-300 rounded-3xl pb-1 justify-center items-center border-none"><span class=" text-lg font-bold">Book Consult</span> <i class="fa-solid fa-arrow-up rotate-45 mr-2 w-8 mt-1 rounded-full bg-black text-center px-2 py-2 text-white"></i></a></div>
+              </div>
+      </footer>
 </body>
 </html>
